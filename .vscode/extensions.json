@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "onecentlin.laravel-blade",
+    "shufo.vscode-blade-formatter",
+    "amiralizadeh9480.laravel-extra-intellisense",
+    "codingyu.laravel-goto-view",
+    "onecentlin.laravel5-snippets",
+    "devsense.phptools-vscode"
+  ]
+}

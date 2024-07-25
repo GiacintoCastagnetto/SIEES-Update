@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: #fff;
+}
+
+.navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 4rem;
+  box-sizing: initial;
+  background: #05175f;
+  transition: width 0.5s;
+  overflow-x: hidden;
+  z-index: 1000;
+}
+
+.navigation.active {
+  width: 300px;
+}
+
+.navigation ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-left: 0.5rem;
+  padding-top: 40px;
+}
+
+.navigation ul li {
+  position: relative;
+  list-style: none;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.navigation ul li.active {
+  background: #fff;
+}
+
+.navigation ul li a {
+  align-items: center;
+  position: relative;
+  width: 100%;
+  gap: 1rem;
+  padding: 0.25rem 0.5rem;
+  display: flex;
+  text-decoration: none;
+  color: #fff;
+}
+
+.navigation ul li.active a {
+  color: #333;
+}
+
+.navigation ul li a .icon {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 2rem;
+  height: 2rem;
+}
+
+.navigation {
+  .title {
+    font-weight: 600;
+    text-wrap: nowrap;
+  }
+  .email {
+    font-size: 0.95em;
+    color: #272727;
+  }
+}
+
+.toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 3rem;
+  height: 3rem;
+  background: #05175f;
+  z-index: 1000;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .close {
+    display: none;
+  }
+  .open {
+    display: block;
+  }
+
+  :is(svg, svg:hover) {
+    color: #fff;
+    font-size: 1.5em;
+    opacity: 1 !important;
+  }
+}
+
+.toggle.active {
+  background: #0a2590;
+  .open {
+    display: none;
+  }
+  .close {
+    display: block;
+  }
+}
+
+.perfil {
+  background-color: #fff;
+  margin-bottom: 30px;
+}
